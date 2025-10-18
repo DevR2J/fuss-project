@@ -32,5 +32,5 @@ A full-stack PHP/MySQL web app for students to exchange skills and services usin
 - Sessions used for authentication
 
 ## 📄 License
-
+##
 MIT
