@@ -1,0 +1,23 @@
+{
+  "name": "FUSS LAMP",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8080, 8081, 3306],
+  "portsAttributes": {
+    "8080": {"label": "Web (Apache)"},
+    "8081": {"label": "phpMyAdmin"},
+    "3306": {"label": "MariaDB"}
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-pack",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig"
+      ]
+    }
+  }
+}
